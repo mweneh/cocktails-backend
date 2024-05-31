@@ -1,4 +1,3 @@
-# lib/tasks/seed_cocktails.rake
 namespace :db do
     desc "Seed cocktails from TheCocktailDB"
     task seed_cocktails: :environment do
@@ -31,7 +30,7 @@ namespace :db do
             )
           end
         end
-        puts "Successfully seeded cocktails!"
+        puts "Successfully seeded cocktail data!"
       else
         puts "Failed to fetch data from the API"
       end
