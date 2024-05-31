@@ -13,7 +13,7 @@ namespace :db do
         cocktails.each do |cocktail|
           Cocktail.find_or_create_by(
             name: cocktail['strDrink'],
-            image:cocktail['strDrinkThumb']
+            image:cocktail['strDrinkThumb'],
             description: "Alcoholic Cocktail", 
             ingredients: "See instructions", 
             instructions: "No instructions provided" 
